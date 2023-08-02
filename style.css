@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+input {
+  font-family: inherit;
+}
+
+main {
+  margin-inline: auto;
+  max-width: 21.875rem;
+}
+
+main h1 {
+  color: #4e5150;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.items-container {
+  background-color: #f2f2f2;
+  border-radius: 0.75rem;
+  padding: 2rem 1.625rem 0.5rem;
+  margin-top: 1.3125rem;
+}
+
+.item {
+  display: flex;
+  column-gap: 1.25rem;
+  color: #4e5150;
+}
+
+.item:nth-child(2) {
+  margin-top: 1.75rem;
+}
+
+.item img {
+  width: 7.625rem;
+  height: 7.75rem;
+  border-radius: 0.75rem;
+}
+
+.item-description h3 {
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.item-price-1 {
+  color: #f2994a;
+  font-size: 0.875rem;
+}
+
+.item-price-2 {
+  text-decoration: line-through;
+  font-size: 0.625rem;
+  margin-left: 0.5rem;
+}
+
+.amount {
+  border: thin solid #828282;
+  border-radius: 0.75rem;
+  padding: 0.8rem;
+  width: 8.4375rem;
+  margin-top: 1.8rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount span {
+  color: #333;
+}
+
+.amount button {
+  width: 21.2px;
+  height: 21.2px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #828282;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.items-container hr {
+  border: none;
+  border-top: thin solid #bdbdbd;
+}
+
+.items-container hr:first-of-type {
+  margin-top: 5.3125rem;
+}
+
+.payment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  color: #333;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+form h2 {
+  color: #333;
+  font-size: 0.875rem;
+  margin-top: 2.5rem;
+}
+
+.input-content {
+  margin-top: 0.5rem;
+}
+
+.input-content label {
+  font-size: 0.625rem;
+  color: #4f4f4f;
+}
+
+.input {
+  border: thin solid #828282;
+  border-radius: 0.75rem;
+  padding: 0.6rem;
+  margin-top: 0.1rem;
+
+  display: flex;
+  align-items: center;
+  column-gap: 0.8rem;
+}
+
+.input img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.input input,
+select {
+  border: none;
+  width: 100%;
+}
+
+.input input::placeholder,
+.input select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  color: #828282;
+}
+
+.input input:focus,
+.input select:focus {
+  outline: none;
+}
+
+.country,
+.postal-code {
+  display: inline-block;
+  width: 10.125rem;
+}
+
+.postal-code {
+  margin-left: 1.2rem;
+}
+
+.save-info {
+  margin-top: 1rem;
+
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.save-info input {
+  width: 1rem;
+  height: 1rem;
+  appearance: none;
+
+  border: thin solid #828282;
+  border-radius: 4px;
+}
+
+.save-info input:checked {
+  appearance: auto;
+}
+
+.save-info label {
+  color: #4f4f4f;
+  font-size: 0.625rem;
+}
+
+input[type="button"] {
+  background-color: #f2994a;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-inline-start: auto;
+  margin-top: 1.25rem;
+  padding: 1.0625rem 2.8125rem;
+}
+
+footer {
+  color: #bdbdbd;
+  font-size: 0.875rem;
+  margin-top: 5.9375rem;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+}
+
+@media (min-width: 62rem) {
+  main {
+    max-width: 60rem;
+  }
+
+  main h1 {
+    font-size: 2.25rem;
+  }
+
+  .checkout-content {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 4rem;
+  }
+
+  .items-container {
+    align-self: flex-start;
+    margin: 0;
+    width: 23.9375rem;
+  }
+
+  .item img {
+    width: 8.4375rem;
+    height: 8.4375rem;
+    border-radius: 0.75rem;
+  }
+
+  .item-description h3 {
+    font-size: 1rem;
+  }
+
+  .item-price-1 {
+    font-size: 1rem;
+  }
+
+  .item-price-2 {
+    font-size: 0.75rem;
+  }
+
+  .amount {
+    margin-top: 2.25rem;
+  }
+
+  .items-container hr:first-of-type {
+    margin-top: 5.9375rem;
+  }
+
+  form {
+    order: -1;
+    padding-top: 0.2rem;
+    width: 29.0625rem;
+  }
+
+  form h2 {
+    margin-top: 0;
+    font-size: 1.125rem;
+  }
+
+  .input-content {
+    margin-top: 0.8rem;
+  }
+
+  .input-content label {
+    font-size: 0.75rem;
+  }
+
+  .shipping {
+    margin-top: 3.625rem;
+  }
+
+  .input {
+    padding: 1rem 0.6rem;
+    margin-top: 0.3rem;
+  }
+
+  .input img {
+    width: 1.25rem;
+    height: auto;
+  }
+
+  .input input {
+    font-size: 1rem;
+  }
+
+  .input input::placeholder,
+  .input select {
+    font-size: 1rem;
+  }
+
+  .country,
+  .postal-code {
+    width: 13.5625rem;
+  }
+
+  .postal-code {
+    margin-left: 1.65625rem;
+  }
+
+  .save-info input {
+    width: 1.3125rem;
+    height: 1.3125rem;
+  }
+
+  .save-info label {
+    font-size: 0.75rem;
+  }
+}
